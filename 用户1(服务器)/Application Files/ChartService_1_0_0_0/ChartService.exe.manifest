@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ChartService.exe" version="1.0.0.0" publicKeyToken="7d2c4335eb8acae8" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ChartService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ChartService.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChartService.exe" size="221640">
+      <assemblyIdentity name="ChartService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5UScePuNZW3LVLEhvbDnJqZFJWiwKEom01Hpck7/LO4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChatCommoms.dll" size="4096">
+      <assemblyIdentity name="ChatCommoms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>90rMJsuOAOUbZW5mZv0AQ8Uk+mVddTjlNdfBikr80CY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChatModels.dll" size="4608">
+      <assemblyIdentity name="ChatModels" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IXjKHD+H0nyxOYOTPM0WRtueQk0NOrpRv/6YGUXyJHY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ChartService.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=万恩泓\Administrator" issuerKeyHash="081232eafab2f0a3f7ab678fde8264d909cd989a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>b9CNLq9ZismreuPAmQnw3UX2lXF1uIlRvlabGwydYts=</DigestValue></Reference></SignedInfo><SignatureValue>vRW6EnFqSaE67KJF58tnfzdzUtkZfPQ5eRt3Q/GdTNQYcXuzQGti1pLTTMxcbR2qqAAVMIjAULgNVdnaggbq5AeL8HYe3nnaiLxsebrrf/YeDQRSnbVS5GCyOBLzWIIsljDGXgKsapRWTTXG5HqH+wgNUGmIL7C/faA2Hk7V8bg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wPW15aZ3HLXDS2m/L0X8a4DICtFEI3EBQjfrHrDgTy50M97D+UeLVcVN4X+YYs/NW9wTj9hf9egOMnlB7AeIQz9z5RYCJ7EmY9eU9L5of2q+7BtkfSesLFi8OZjUsAfrtxSOXKlOCxtcFhduIA3UOe5Z7o9Zomx4p8eFVseW25k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="db629d0c1b9b56be5189b8757195f645ddf00999c0e37aabc98a59af2e8dd06f" Description="" Url=""><as:assemblyIdentity name="ChartService.exe" version="1.0.0.0" publicKeyToken="7d2c4335eb8acae8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=万恩泓\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>d8VUe3wpcxMgCHiL69bhdBoq3nzULVo7HjNP1kCeSmw=</DigestValue></Reference></SignedInfo><SignatureValue>NuNYirw6yhKd4qE6K10xAhgprr2K586o4Jo/fIx6lFWIOEkTOKPvSXYh9+n/HCkrAevfxOpOg/RLsQ+r/Nl1g1zbGlrpYg6w4CWZFExE6RqC/KGnZCEcT3ch1+B+v7xAv63lVKAvHCU1nMfC2ui9XDBhNF784HGxujJzKRuhxNI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wPW15aZ3HLXDS2m/L0X8a4DICtFEI3EBQjfrHrDgTy50M97D+UeLVcVN4X+YYs/NW9wTj9hf9egOMnlB7AeIQz9z5RYCJ7EmY9eU9L5of2q+7BtkfSesLFi8OZjUsAfrtxSOXKlOCxtcFhduIA3UOe5Z7o9Zomx4p8eFVseW25k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQMZ7GuJaZA7tJwm81fez3GzANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiJOB2BpbNMAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMB4XDTIzMDMxMDEyNTI1NVoXDTI0MDMwOTE4NTI1NVowLTErMCkGA1UEAx4iTgdgaWzTAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwPW15aZ3HLXDS2m/L0X8a4DICtFEI3EBQjfrHrDgTy50M97D+UeLVcVN4X+YYs/NW9wTj9hf9egOMnlB7AeIQz9z5RYCJ7EmY9eU9L5of2q+7BtkfSesLFi8OZjUsAfrtxSOXKlOCxtcFhduIA3UOe5Z7o9Zomx4p8eFVseW25kCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAE2GCb3I31xUbbGRm0K9yI2ln5iJ1SAdH94+JpteCSwsUV1IJHXdXbFsSfQyYYdTiPAwfTz6fpLekU33J5o4KtwUJkVCqY7aGfMQ3ST/MU0iQHYylnjbks70npLcPERRqk3upWhfQkwSTmHE4p2FpJ9PUWRudOdJSHrLAYPDJBpg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
